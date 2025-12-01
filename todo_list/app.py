@@ -9,7 +9,7 @@ from todo_list.database import get_session
 from todo_list.models import User
 from todo_list.shcemas import Message, UserList, UserPublic, UserSchema
 
-app = FastAPI(title='Lista to do')
+app = FastAPI(title='Gerenciamento de usuários')
 
 
 @app.get('/', status_code=HTTPStatus.OK, response_model=Message)
